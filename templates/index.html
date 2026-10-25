@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="Il Jass dell’Associazione Sportiva Soazza. Gioca, incontra gli amici e organizza il tuo prossimo torneo.">
+  <title>ASS Jass · Soazza</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" data-nav="home" aria-label="ASS Jass — home">
+      <span class="brand-crest"><img src="/static/ass.png" alt="ASS Soazza" width="58" height="58"></span>
+      <span class="brand-type"><strong>ASS <span>Jass</span><i>♠</i></strong><small>ASSOCIAZIONE SPORTIVA SOAZZA</small></span>
+    </a>
+    <div class="sidebar-label" data-i18n="your_club">IL TUO CIRCOLO DIGITALE</div>
+    <nav class="main-nav" aria-label="Menu">
+      <a href="/" data-nav="home"><span class="nav-icon" data-icon="cards"></span><span data-i18n="play">Gioca</span><span class="nav-arrow">↗</span></a>
+      <a href="/#scores" data-nav="scores"><span class="nav-icon" data-icon="score"></span><span data-i18n="scores">Segnapunti</span></a>
+      <a href="/#tournaments" data-nav="tournaments"><span class="nav-icon" data-icon="trophy"></span><span data-i18n="tournaments">Tornei</span></a>
+      <a href="/#rules" data-nav="rules"><span class="nav-icon" data-icon="book"></span><span data-i18n="nav_rules">Regole</span></a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="club-note"><span class="tiny-suits">♠ <b>♥</b> ♣ <b>♦</b></span><p data-i18n="club_note">Una buona mano.<br>Un’ottima compagnia.</p><small>SOAZZA · GRIGIONI · CH</small></div>
+      <button class="profile-button" type="button" data-action="settings"><span class="avatar" id="profile-avatar">G</span><span><strong id="profile-name">Giocatore</strong><small data-i18n="profile_settings">Profilo e preferenze</small></span><span class="settings-icon" data-icon="settings"></span></button>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="breadcrumb"><span>SOAZZA</span><i>/</i><strong id="page-label">Il circolo</strong></div>
+      <div class="topbar-actions"><span class="online-indicator"><i></i><span data-i18n="ready">Pronti a giocare</span></span><div class="language-switch" aria-label="Lingua / Sprache"><button type="button" data-lang="it" aria-pressed="true">IT</button><button type="button" data-lang="de" aria-pressed="false">DE</button></div><button class="icon-button mobile-settings" type="button" data-action="settings" aria-label="Impostazioni / Einstellungen" data-icon="settings"></button></div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-page"><span class="spinner"></span><p>ASS Jass</p></div></main>
+    <footer class="footer"><span>© ASS · Associazione Sportiva Soazza</span><span data-i18n="footer_note">Fatto per stare insieme. Anche a distanza.</span><span class="footer-suits">♠ <b>♥</b> ♣ <b>♦</b></span></footer>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+  <div id="clipboard-fallback" hidden></div>
+</body>
+</html>

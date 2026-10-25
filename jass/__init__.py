@@ -1,0 +1,1 @@
+"""ASS Jass game services."""
